@@ -7,6 +7,8 @@ const DATABASE = process.env.DATABASE
 
 const app = express();
 
+app.use(cors());
+
 mongoose.connect(DATABASE,{
     dbName: 'blog-site'});
 
