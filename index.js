@@ -4,6 +4,7 @@ require("dotenv").config()
 const Post = require("./models/Posts");
 const PORT = process.env.PORT || 4000
 const DATABASE = process.env.DATABASE
+const cors = require("cors");
 
 const app = express();
 
